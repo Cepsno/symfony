@@ -520,7 +520,7 @@
         "version": "1.6.0"
     },
     "zendframework/zend-code": {
-        "version": "3.4.1"
+        "version": "3.4.0"
     },
     "zendframework/zend-eventmanager": {
         "version": "3.2.1"

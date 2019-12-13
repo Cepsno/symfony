@@ -1,1 +1,19 @@
-{# empty Twig template #}
+{% extends "noticias/base.html.twig" %} {% block title %}Noticias{% endblock %} {% block body %}
+<h1>Noticias</h1>
+<div>
+    <h3>{{noticia.titulo}}</h3>
+    <p>{{noticia.texto}}</p>
+    <p>{{noticia.usuario}}</p>
+</div>
+</br>
+<div>
+    <h3>
+        <a href="{{path ('show', {'id': noticia.id})}}">Noticia 2</a>
+    </h3>
+    <p>cuerpo de la noticia</p>
+</div>
+{% endblock %} {% block javascripts %} {{ parent() }}
+<script>
+    //alert("hola");
+</script>
+{% endblock %}
